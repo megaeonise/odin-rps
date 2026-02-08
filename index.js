@@ -16,7 +16,6 @@ function getHumanChoice() {
   return choice.toLowerCase();
 }
 function playRound(humanChoice, computerChoice) {
-  console.log(humanChoice, computerChoice);
   if (computerChoice === "rock") {
     switch (humanChoice) {
       case "rock":
