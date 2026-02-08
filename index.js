@@ -22,24 +22,30 @@ function playRound(humanChoice, computerChoice) {
         console.log("You tie! Rock ties Rock");
       case "paper":
         console.log("You win! Paper beats Rock");
+        humanScore++;
       case "scissors":
         console.log("You lose! Rock beats Scissors");
+        computerScore++;
     }
   } else if (computerChoice === "paper") {
     switch (humanChoice) {
       case "rock":
         console.log("You lose! Paper beats Rock");
+        computerScore++;
       case "paper":
         console.log("You tie! Paper ties Paper");
       case "scissors":
         console.log("You win! Scissors beats Paper");
+        humanScore++;
     }
   } else if (computerChoice === "scissors") {
     switch (humanChoice) {
       case "rock":
         console.log("You win! Rock beats Scissors");
+        humanScore++;
       case "paper":
         console.log("You lose! Scissors beats Paper");
+        computerScore++;
       case "scissors":
         console.log("You tie! Scissors ties Scissors");
     }
