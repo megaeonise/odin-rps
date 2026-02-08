@@ -28,14 +28,20 @@ function playRound(humanChoice, computerChoice) {
   } else if (computerChoice === "paper") {
     switch (humanChoice) {
       case "rock":
+        console.log("You lose! Paper beats Rock");
       case "paper":
+        console.log("You tie! Paper ties Paper");
       case "scissors":
+        console.log("You win! Scissors beats Paper");
     }
   } else if (computerChoice === "scissors") {
     switch (humanChoice) {
       case "rock":
+        console.log("You win! Rock beats Scissors");
       case "paper":
+        console.log("You lose! Scissors beats Paper");
       case "scissors":
+        console.log("You tie! Scissors ties Scissors");
     }
   }
 }
