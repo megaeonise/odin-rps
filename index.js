@@ -50,4 +50,21 @@ function playRound(humanChoice, computerChoice) {
         console.log("You tie! Scissors ties Scissors");
     }
   }
+  return;
+}
+function playGame() {
+  let message = "";
+  for (i = 0; i <= 5; i++) {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+  }
+  if (humanScore > computerScore) {
+    message = "Human is the winner";
+  } else {
+    message = "Computer is the winner";
+  }
+  humanScore = 0;
+  computerScore = 0;
+  return message;
 }
